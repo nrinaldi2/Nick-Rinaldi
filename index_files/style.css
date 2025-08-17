@@ -1,0 +1,306 @@
+body {
+    margin: 0px;
+    text-align: center;
+    min-width: 350px;
+}
+.div-fill {
+    background-color: #70c2ff;
+    overflow-x: hidden;
+}
+
+.center {
+    width: 40%;
+    margin: 0 auto;
+}
+
+h1 {
+    color:#1c79d9;
+    text-wrap: nowrap;
+    font-family: caveat;
+    font-size: 6rem;
+}
+
+h2 {
+    color:#1c89d9;
+    text-decoration: underline;
+    font-family: oswald;
+    font-size: 2.5rem;
+}
+
+h3 {
+    text-decoration: none;
+    font-family: oswald;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color:#1b89b8;
+}
+
+p {
+    font-family: 'Newsreader';
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+a {
+    color:#1c79d9;
+    font-weight: 600;
+}
+
+a:hover {
+    color:#abe3fc;
+}
+
+hr {
+    border: dotted #abe3fc 4px;
+    border-bottom: none;
+    width: 15%;
+    margin: 100px auto;
+}
+
+.description {
+    text-decoration: none;
+    font-weight: 400;
+    color:#1ca0d9;
+    margin-bottom: 50px;
+}
+
+.intro {
+    width: 35%;
+    margin: 19.2px auto;
+}
+
+.titles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.title-icon {
+    height: 1.5em;
+}
+
+.top-container {
+    position: relative;
+    padding-top: 100px;
+}
+.middle-container {
+    margin: 100px auto;
+}
+
+.bottom-container {
+    padding: 40px 0 50px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 20px;
+}
+
+.skill-grid h3 {
+    border-style: none double;
+    border-width: 6px;
+    border-color:#abe3fc;
+    text-wrap: nowrap;
+    min-width: fit-content;
+}
+
+.project-grid {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
+    gap: 100px;
+    margin-bottom: 100px;
+}
+.proj-img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-color: #d0f1ff;
+    border-style: inset none none inset;
+    border-width: 6px;
+}
+
+.proj-desc > h3 {
+    margin-top: 0px;
+}
+
+.proj-desc > p {
+    text-align: left;
+    border-color: #abe3fc;
+    border-style: none inset inset none;
+    border-width: 6px;
+}
+
+.bird {
+    height: 50px;
+    margin: 0px;
+}
+
+.b1 {
+    position: absolute;
+    right: 250px;
+    top: 40px;
+    height: 50px;
+}
+
+.b2 {
+    position: absolute;
+    left: 260px;
+    top: 555px;
+    height: 45px;
+}
+
+.cloud {
+    height: 50px;
+    margin: 0px;
+}
+
+.c1 {
+    position: absolute;
+    right: 240px;
+    top: 70px;
+    height: 70px;
+}
+
+.c2 {
+    position: absolute;
+    left: 140px;
+    top: 580px;
+    height: 70px;
+}
+
+.lighthouse {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px;
+    margin-bottom: 0;
+    height: 267.79px;
+}
+
+.pfp {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.pfp > img {
+    position: relative;
+    bottom: 50px;
+    right: 15px;
+}
+
+h3.connect {
+    margin-top: 0px;
+    font-weight: 500;
+}
+
+#together {
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+p.connect {
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.btn {
+    padding: 5px 20px;
+    border: 3px solid #d0f1ff;
+    border-radius: 10px;
+    background-color: #1b89b8;
+    color:#d0f1ff;
+    font-family: 'Oswald';
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    border: 3px solid #1b89b8;
+    border-radius: 10px;
+    background-color: #d0f1ff;
+    color:#1b89b8;
+    cursor: pointer;
+}
+
+.socials > *{
+    margin: 0px 20px;
+}
+
+.socials a {
+    font-family: 'Oswald';
+    font-size: 0.95rem;
+    text-decoration: none;
+}
+
+.branding {
+    margin: 0 auto;
+}
+
+.branding > p {
+    margin-top: 30px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color:#d0f1ff;
+}
+
+@media (max-width: 890px) {
+    h1 {
+        margin-bottom: 25px;
+    }
+    .titles {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0px;
+    }
+    .title {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .b2 {
+        top: 975px;
+    }
+    .c2 {
+        top: 1000px;
+    }
+
+    .skill {
+        grid-column: span 2;
+    }
+
+    .project-grid {
+        gap: 50px;
+    }
+
+    .proj-img {
+        margin: auto auto 0;
+    }
+
+    .proj-img, .proj-desc {
+        grid-column: span 2;
+    }
+
+    
+
+    
+
+
+}
