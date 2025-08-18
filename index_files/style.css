@@ -3,14 +3,17 @@ body {
     text-align: center;
     min-width: 350px;
 }
-.div-fill {
-    background-color: #70c2ff;
-    overflow-x: hidden;
+
+.top-container {
+    position: relative;
+    padding-top: 100px;
+}
+.middle-container {
+    margin: 100px auto;
 }
 
-.center {
-    width: 40%;
-    margin: 0 auto;
+.bottom-container {
+    padding: 40px 0 40px;
 }
 
 h1 {
@@ -32,7 +35,7 @@ h3 {
     font-family: oswald;
     font-size: 1.4rem;
     font-weight: 400;
-    color:#1b89b8;
+    color:#1a7ea9;
 }
 
 p {
@@ -55,6 +58,26 @@ hr {
     border-bottom: none;
     width: 15%;
     margin: 100px auto;
+}
+
+strong {
+    font-weight: normal;
+    text-decoration: underline;
+}
+
+.div-fill {
+    background-color: #70c2ff;
+    overflow-x: hidden;
+}
+
+.center {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.highlight {
+    color: #1c89d9;
+    font-weight: 600;
 }
 
 .description {
@@ -86,24 +109,20 @@ hr {
     height: 1.5em;
 }
 
-.top-container {
-    position: relative;
-    padding-top: 100px;
-}
-.middle-container {
-    margin: 100px auto;
-}
-
-.bottom-container {
-    padding: 40px 0 50px;
-}
-
 .skill-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr;
-    gap: 20px;
+    gap: 30px;
+    min-width: fit-content; 
+}
+
+.skill p {
+    max-width: 300px;
+    margin: auto;
+    padding-left: 9px;
+    text-align: left;
 }
 
 .skill-grid h3 {
@@ -111,16 +130,16 @@ hr {
     border-width: 6px;
     border-color:#abe3fc;
     text-wrap: nowrap;
-    min-width: fit-content;
+    padding: 0px 10px;
 }
 
 .project-grid {
     height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% auto;
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
-    gap: 100px;
+    gap: 20%;
     margin-bottom: 100px;
 }
 .proj-img {
@@ -141,6 +160,8 @@ hr {
     border-color: #abe3fc;
     border-style: none inset inset none;
     border-width: 6px;
+    text-wrap: wrap;
+    width: 100%;
 }
 
 .bird {
@@ -222,22 +243,33 @@ p.connect {
 
 .btn {
     padding: 5px 20px;
-    border: 3px solid #d0f1ff;
-    border-radius: 10px;
     background-color: #1b89b8;
-    color:#d0f1ff;
+    background-image: -webkit-linear-gradient(top, #1e99ce, #1a566f);
+    background-image: -moz-linear-gradient(top, #1e99ce, #1a566f);
+    background-image: -ms-linear-gradient(top, #1e99ce, #1a566f);
+    background-image: -o-linear-gradient(top, #1e99ce, #1a566f);
+    background-image: linear-gradient(to bottom, #1e99ce, #1a566f);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    color:#ffffff;
     font-family: 'Oswald';
     font-size: 1.5em;
     font-weight: 400;
     letter-spacing: 1px;
+    line-height: 3px;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .btn:hover {
-    border: 3px solid #1b89b8;
-    border-radius: 10px;
-    background-color: #d0f1ff;
-    color:#1b89b8;
+    background-color: #1e99ce;
+    color:#ffffff;
+    background-image: -webkit-linear-gradient(top, #21a5dd, #25789b);
+    background-image: -moz-linear-gradient(top, #21a5dd, #25789b);
+    background-image: -ms-linear-gradient(top, #21a5dd, #25789b);
+    background-image: -o-linear-gradient(top, #21a5dd, #25789b);
+    background-image: linear-gradient(to bottom, #21a5dd, #25789b);
     cursor: pointer;
 }
 
@@ -288,6 +320,8 @@ p.connect {
 
     .project-grid {
         gap: 50px;
+        grid-template-rows: auto 1fr;
+        grid-auto-rows: auto 1fr;
     }
 
     .proj-img {
@@ -297,10 +331,4 @@ p.connect {
     .proj-img, .proj-desc {
         grid-column: span 2;
     }
-
-    
-
-    
-
-
 }
