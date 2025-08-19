@@ -140,7 +140,7 @@ strong {
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     gap: 10%;
-    width: 60%
+    width: 55%
 }
 .proj-img {
     width: 100%;
@@ -161,6 +161,7 @@ strong {
     border-style: none inset inset none;
     border-width: 6px;
     text-wrap: wrap;
+    padding-right: 10px;
     width: 100%;
 }
 
