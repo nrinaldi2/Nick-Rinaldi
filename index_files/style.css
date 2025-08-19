@@ -136,11 +136,11 @@ strong {
 .project-grid {
     height: auto;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-rows: 1fr 1fr;
     gap: 20%;
-    margin-bottom: 100px;
+    width: 60%
 }
 .proj-img {
     width: 100%;
@@ -162,6 +162,10 @@ strong {
     border-width: 6px;
     text-wrap: wrap;
     width: 100%;
+}
+
+.proj-ext {
+    margin-top: 200px;
 }
 
 .bird {
