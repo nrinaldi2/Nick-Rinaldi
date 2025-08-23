@@ -1,0 +1,89 @@
+html {
+    min-width: 500px;
+}
+
+.middle-container {
+    position: relative;
+    width: 80%;
+    margin-top: 65px auto;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 6.5vw;
+    margin: 0px;
+    padding: 60px 32px 5vw;
+}
+h3 {
+    margin-top: 50px;
+    font-size: 1.9rem;
+}
+
+.center.par {
+    width: 80%;
+    margin-bottom: 250px;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 50px;
+}
+
+p.first {
+    margin-top: 30px;
+    text-indent: 50px;
+}
+
+h3.last {
+    margin-top: 80px;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.back {
+    font-size: 1.7vw;
+    color: black;
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    background: none;
+}
+
+#arrow {
+    font-size: 2.5vw;
+}
+
+.back:hover {
+    background: none;
+}
+
+
+@media (max-width: 550px) {
+    h1{
+        font-size: 2.8rem;
+        padding-bottom: 25px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    p.first {
+        margin-top: 0px;
+        text-indent: 20px;
+    }
+
+    .back {
+        font-size: 0.5rem;
+    }
+
+    #arrow {
+        font-size: 0.9rem;
+    }
+}
