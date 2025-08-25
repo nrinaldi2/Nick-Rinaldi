@@ -102,7 +102,7 @@ li {
     margin-bottom: 50px;
 }
 
-p.intro {
+p.block {
     width: 35%;
     min-width: 309px;
     margin: 19.2px auto;
@@ -173,7 +173,7 @@ p.intro {
     margin-top: 0px;
 }
 
-.par p {
+.par p { 
     margin-bottom: 0px;
 } 
 
@@ -192,6 +192,7 @@ p.intro {
 
 .extra {
     margin-top: 150px;
+    min-width: 300px;
 }
 
 .bird {
@@ -370,5 +371,10 @@ p.connect {
 
     .proj-ext {
         margin-top: 100px;
+    }
+
+    h3.connect {
+        text-wrap: wrap;
+        width: 320px;
     }
 }
