@@ -1,89 +1,69 @@
+html {
+    min-width: 320px;
+}
+
 body {
-    min-width: 330px;
+    padding-top: 6vw;    
 }
 
 .middle-container {
     position: relative;
-    width: 80%;
-    margin-top: 65px auto;
-    padding-bottom: 100px;
+    width: 60%;
+    margin: 0 auto 6vw;
+    padding-bottom: 10vw;
 }
 
 h1 {
-    font-size: 6.5vw;
+    font-size: 5vw;
     margin: 0px;
-    padding: 60px 32px 5vw;
+    padding: 10vw 0px 5vw;
 }
 h3 {
-    margin-top: 50px;
-    font-size: 1.9rem;
+    margin-top: 2vw;
+    font-size: 2vw;
 }
 
 .center.par {
     width: 80%;
-    margin-bottom: 250px;
+    margin-bottom: 18vw;
 }
 
 p {
-    font-size: 1.6rem;
-    line-height: 50px;
+    margin-top: 1vw;
+    font-size: 1.5vw;
+    line-height: 3.0vw;
 }
 
 p.first {
-    margin-top: 30px;
-    text-indent: 50px;
+    text-indent: 3.5vw;
 }
 
 h3.last {
-    margin-top: 80px;
+    margin-top: 6vw;
 }
 
 .btn {
-    font-size: 1.5rem;
+    font-size: 1.9vw;
 }
 
-.back {
+a.btn.back {
     font-size: 1.7vw;
     color: black;
-    position: absolute;
-    top: -35px;
-    left: -20px;
     background: none;
+    display:block;
+    padding: 0;
+    margin: 0 auto 2vw 20vw;
+    width: fit-content;
 }
-
 #arrow {
     font-size: 2.5vw;
 }
 
-.back:hover {
+a.btn.back:hover {
     background: none;
+    color: white;
 }
 
-
-@media (max-width: 550px) {
-    h1{
-        font-size: 2.8rem;
-        padding-bottom: 25px;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-    }
-
-    p {
-        font-size: 1.2rem;
-    }
-
-    p.first {
-        margin-top: 0px;
-        text-indent: 20px;
-    }
-
-    .back {
-        font-size: 0.5rem;
-    }
-
-    #arrow {
-        font-size: 0.9rem;
-    }
+@media (max-width: 320px) {
+    
 }
